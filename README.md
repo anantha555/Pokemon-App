@@ -18,7 +18,12 @@ Demo link: <a href= 'https://anantha555.github.io/Pokemon-App/'> Pokémon-App</a
   - each stat has its own level bar indicator
   - level bar indicator color can be red, orange, yellow, green depending on its value
   - the weight and height is indicated in kilogram and meter 
+---
+
+<img src="PokeMonScreenshot.png" alt="pokedex" style="margin-left: 15px;" />
 
 ---
+
 <a href= 'https://www.linkedin.com/in/anantha555/'> LinkedIn </a>
+
 ---
