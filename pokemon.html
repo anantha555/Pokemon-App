@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="pokemon.css">
+    <title>PokeMon</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="pokemon-left-container">
+
+            <div class="pokemon-title">
+                <h1>Pokedex App</h1>
+            </div>
+            <div class="pokemon-list">
+                <div class='col-list'>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                </div>
+                <div class='col-list'>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                    <div class="list-item">PokeMon</div>
+                </div>
+            </div>
+            <div class="pokemon-navigate">
+                <button id='back-btn' class='btn'>← Prev</button>
+                <button id='next-btn' class='btn'>Next →</button>
+            </div>
+
+        </div>
+        <div class="pokemon-right-container">
+            <div class='searchContainer'>
+                <input id='search-field' type="search" placeholder="Search by Name or #">
+                <button id='btn-s' onclick=search()><i class="fa fa-search"></i></button>
+            </div>
+            <div id="headerContainer">
+                <div id="info">
+                    <h2 id="dex-number">#001</h2>
+                    <h1 id="pokemon-name">Bulbasaur</h1>
+                    <div class="pokemon-types-list">
+                        <h2 id="pokemon-type-one"></h2>
+                        <h2 id="pokemon-type-two"></h2>
+                    </div>
+                </div>
+                <div id="poke-images" class="poke-images">
+                    <img class="poke-image" id='poke-image-front' src="" alt="">
+                    <img class="poke-image" id='poke-image-front-shine' src="" alt="">
+
+                    <img class="poke-image" id='poke-image-back' src="" alt="">
+                    <img class="poke-image" id='poke-image-back-shine' src="" alt="">
+                </div>
+            </div>
+            <div class='base-stats'>
+                <h1>Base Stats</h1>
+                <div style='display: flex;'>
+                    <table class='starts-table' style='width: 85%;'>
+                        <tbody>
+                            <tr>
+                                <td class='stat-name'>Hp</td>
+                                <td id='stat-hp' class='start-num'>0</td>
+                                <td>
+                                    <div class="grey-bar">
+                                        <div class='hp-color-bar'> </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class='stat-name'>Attack</td>
+                                <td id='stat-attack' class='start-num'>0</td>
+                                <td>
+                                    <div class="grey-bar">
+                                        <div class='attack-color-bar'> </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class='stat-name'>Defense</td>
+                                <td id='stat-defense' class='start-num'>0</td>
+                                <td>
+                                    <div class="grey-bar">
+                                        <div class='defense-color-bar'> </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class='stat-name'>Special Attack</td>
+                                <td id='stat-special-attack' class='start-num'>0</td>
+                                <td>
+                                    <div class="grey-bar">
+                                        <div class='special-attack-color-bar'> </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class='stat-name'>Special Defense</td>
+                                <td id='stat-special-defense' class='start-num'>0</td>
+                                <td>
+                                    <div class="grey-bar">
+                                        <div class='special-defense-color-bar'> </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class='stat-name'>Speed</td>
+                                <td id='stat-speed' class='start-num'>0</td>
+                                <td>
+                                    <div class="grey-bar">
+                                        <div class='speed-color-bar'> </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <div style='width: 15%;'>
+                        <div class='pokemon-wh'>
+                            <div id="pokemon-weight">0kg</div>
+                        </div>
+                        <div class='pokemon-wh'>
+                            <div id='pokemon-height'>0m</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="pokemon.js"></script>
+</body>
+
+</html>
